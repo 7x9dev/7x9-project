@@ -205,3 +205,30 @@ h5 {
 .planned {
    color:var(--complementary-color);
 }
+.error-page {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: var(--gap);
+   background: linear-gradient(to top, #00c9a7 0%, #082e67 100%);
+   height: 100vh;
+}
+.error-img {
+   width: 500px;
+}
+.error-text {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   color: var(--light-color);
+}
+.error-text h1 {
+   font-family: 'Allerta', sans-serif;
+   margin-bottom: 15px;
+}
+.error-link {
+   color: var(--light-color);
+   margin-top: 30px;
+   text-decoration: none;
+}
