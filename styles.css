@@ -37,8 +37,7 @@ body {
 h1,
 h2,
 h3,
-h4,
-h5 {
+h4 {
    font-family: var(--heading-font);
    margin: 0;
 }
@@ -58,9 +57,6 @@ h3 {
 h4 {
    font-size: 48px;
    line-height: 1;
-}
-h5 {
-   font-size: 42px;
 }
 
 /* buttons */
@@ -223,13 +219,13 @@ h5 {
    flex-basis: calc(50% - 250px);
    flex-grow: 1;
 }
-.list {
+.skill-list {
    list-style: none;
    margin: 0;
    padding: 0;
    font-size: 48px;
 }
-.list li {
+.skill-list li {
    line-height: 1.5;
    margin: 30px 0;
 }
@@ -286,4 +282,279 @@ footer {
    text-decoration: underline;
    text-decoration-thickness: 1px;
    text-underline-offset: 7px;
+}
+
+@media all and (max-width: 2048px) {
+   .intro,
+   .projects,
+   .about {
+      padding: 150px 250px;
+   }
+   .about {
+      padding-top: 15px;
+   }
+}
+
+@media all and (max-width: 1920px) {
+   .intro,
+   .projects,
+   .about {
+      padding: 120px 200px;
+   }
+   .works,
+   .about {
+      gap: 120px;
+   }
+   #video {
+      height: 840px;
+   }
+   .about {
+      padding-top: 10px;
+   }
+}
+
+@media all and (max-width: 1400px) {
+   body {
+      font-size: 18px;
+   }
+   .intro,
+   .projects,
+   .about {
+      padding: 100px 120px;
+   }
+   .nav-item {
+      font-size: 18px;
+   }
+   h1 {
+      font-size: 150px;
+   }
+   h2 {
+      font-size: 90px;
+   }
+   h3 {
+      font-size: 60px;
+   }
+   h4 {
+      font-size: 38px;
+   }
+   .intro {
+      margin-top: 7%;
+   }
+   .description {
+      font-size: 36px;
+      margin: 20px 0 10px 0;
+   }
+   .status {
+      font-size: 24px;
+   }
+   #video {
+      height: 720px;
+   }
+   .works,
+   .about {
+      gap: 100px;
+   }
+   .single-project {
+      padding: 30px;
+   }
+   .about {
+      padding-top: 12px;
+   }
+   .btn,
+   .btn-outline {
+      font-size: 16px;
+      padding: 18px;
+      width: 240px;
+   }
+   .skill-list {
+      font-size: 36px;
+   }
+}
+
+@media all and (max-width: 1280px) {
+   #video {
+      height: 620px;
+   }
+   .works,
+   .about {
+      gap: 60px;
+   }
+}
+
+@media all and (max-width: 1024px) {
+   .intro {
+      margin-top: 10%;
+   }
+   .works,
+   .about {
+      flex-direction: column;
+   }
+   .cta {
+      order: 1;
+      flex-basis: 640px;
+   }
+   footer {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+   }
+   .rights {
+      line-height: 1.6;
+      order: 1;
+   }
+   footer .link {
+      margin-bottom: 15px;
+   }
+}
+
+@media all and (max-width: 912px) {
+   .intro,
+   .projects,
+   .about {
+      padding: 60px 50px;
+   }
+   .intro {
+      margin-top: 14%;
+   }
+   h1 {
+      font-size: 120px;
+   }
+   h2 {
+      font-size: 72px;
+   }
+   #video {
+      height: 480px;
+   }
+   .projects h2 {
+      margin-bottom: 40px;
+   }
+   .works,
+   .about {
+      gap: 40px;
+   }
+   .cta {
+      flex-basis: 540px;
+      padding: 80px;
+   }
+   .about {
+      padding-top: 14px;
+   }
+}
+
+@media all and (max-width: 540px) {
+   h1 {
+      font-size: 90px;
+   }
+   .projects h2 {
+      margin-bottom: 25px;
+   }
+   .project-preview {
+      margin-bottom: 25px;
+   }
+   .intro {
+      margin-top: 20%;
+   }
+   .cta {
+      padding: 60px;
+   }
+   .skill-list li {
+      margin: 15px 0;
+   }
+}
+
+@media all and (max-width: 500px) {
+   body {
+      font-size: 16px;
+   }
+   h1 {
+      font-size: 54px;
+   }
+   h2 {
+      font-size: 42px;
+   }
+   h3 {
+      font-size: 38px;
+   }
+   h4 {
+      font-size: 28px;
+   }
+   .nav,
+   footer {
+      padding: 15px 0;
+   }
+   .intro {
+      margin-top: 24%;
+   }
+   .intro,
+   .projects,
+   .about {
+      padding: 40px 20px;
+   }
+   .nav-item {
+      margin: 0 16px;
+   }
+   .logo {
+      margin-right: auto;
+   }
+   .description {
+      font-size: 24px;
+      margin: 20px 0 0 0;
+   }
+   .status {
+      font-size: 20px;
+   }
+   #video {
+      height: 340px;
+   }
+   .works,
+   .about {
+      gap: 30px;
+   }
+   .single-project {
+      padding: 20px;
+   }
+   .cta {
+      flex-basis: 400px;
+   }
+   .btn {
+      margin-top: 10px;
+   }
+   .btn,
+   .btn-outline {
+      padding: 16px;
+      width: 200px;
+   }
+   .about {
+      padding-top: 5px;
+   }
+   .skill-list {
+      font-size: 26px;
+   }
+}
+
+@media all and (max-width: 280px) {
+   .nav .link {
+      display: none;
+   }
+   .intro {
+      margin-top: 30%;
+   }
+   .description {
+      font-size: 20px;
+   }
+   .status {
+      font-size: 16px;
+   }
+   #video {
+      height: 320px;
+   }
+   .btn,
+   .btn-outline {
+      width: 170px;
+   }
+   .skill-list {
+      font-size: 24px;
+   }
+   .skill-list li {
+      margin: 10px 0;
+   }
 }
