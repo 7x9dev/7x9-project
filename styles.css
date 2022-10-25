@@ -14,6 +14,8 @@
    --box-padding: 150px 300px;
    --gap: 150px;
    --hover-color: #222;
+   --typewriter-speed: 6s;
+   --typewriter-steps: 34;
 }
 body {
    margin: 0px;
@@ -57,6 +59,7 @@ h3 {
 h4 {
    font-size: 48px;
    line-height: 1;
+   text-transform: capitalize;
 }
 
 /* buttons */
@@ -138,6 +141,39 @@ h4 {
    font-size: 54px;
    line-height: 1.2;
    margin: 30px 0 30px 0;
+   position: relative;
+   width: max-content;
+}
+.description::before,
+.description::after {
+   content: "";
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+}
+.description::before {
+   background-color: var(--light-color);
+   animation: typewriter var(--typewriter-speed) steps(var(--typewriter-steps))
+      1s forwards;
+}
+.description::after {
+   width: 2px;
+   background-color: var(--text-color);
+   animation: typewriter var(--typewriter-speed) steps(var(--typewriter-steps))
+         1s forwards,
+      blink 1s steps(var(--typewriter-steps)) infinite;
+}
+@keyframes typewriter {
+   to {
+      left: 100%;
+   }
+}
+@keyframes blink {
+   to {
+      background: transparent;
+   }
 }
 .status {
    font-size: 28px;
