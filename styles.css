@@ -175,6 +175,9 @@ h4 {
       background: transparent;
    }
 }
+.dscr-mobile {
+   display: none;
+}
 .status {
    font-size: 28px;
 }
@@ -486,6 +489,13 @@ footer {
    h1 {
       font-size: 90px;
    }
+   .description {
+      display: none;
+      font-size: 30px;
+   }
+   .dscr-mobile {
+      display: block;
+   }
    .projects h2 {
       margin-bottom: 25px;
    }
@@ -584,7 +594,7 @@ footer {
       margin-top: 30%;
    }
    .description {
-      font-size: 20px;
+      font-size: 18px;
    }
    .status {
       font-size: 16px;
