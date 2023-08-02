@@ -99,7 +99,11 @@ h4 {
    padding: var(--box-padding);
 }
 
-.intro, .single-project h4, .single-project h3, .single-project p, .about {
+.intro,
+.single-project h4,
+.single-project h3,
+.single-project p,
+.about {
    user-select: none;
 }
 
@@ -268,7 +272,7 @@ h4 {
    font-size: 48px;
 }
 .skill-list li {
-   line-height: 1.5;
+   line-height: 1.7;
    margin: 30px 0;
 }
 .ongoing {
@@ -413,6 +417,9 @@ footer {
    .skill-list {
       font-size: 36px;
    }
+   .skill-list li {
+      line-height: 1.2;
+   }
 }
 
 @media all and (max-width: 1280px) {
@@ -425,6 +432,9 @@ footer {
    .works,
    .about {
       gap: 60px;
+   }
+   .skill-list {
+      font-size: 30px;
    }
 }
 
