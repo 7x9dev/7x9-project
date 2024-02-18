@@ -274,7 +274,16 @@ h4 {
    flex-grow: 1;
 }
 .info .btn {
+   display: flex;
+   align-items: center;
+   gap: 15px;
    margin-top: 30px;
+}
+.info a {
+   text-decoration: none;
+}
+.donut-img {
+   width: 28px;
 }
 .skill-list {
    list-style: none;
