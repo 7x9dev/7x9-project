@@ -63,32 +63,40 @@ h4 {
 }
 
 /* buttons */
+.btn,
+.btn-secondary,
+.btn-outline-light {
+   font-family: var(--body-text-font);
+   font-size: 18px;
+   padding: 20px 80px;
+   cursor: pointer;
+}
 .btn {
    color: var(--light-color);
+   background-color: var(--primary-color);
+   border: var(--primary-color) 1px solid;
+}
+.btn:hover {
+   border: var(--primary-color) 1px solid;
+   color: var(--text-color);
+   background-color: var(--light-color);
+}
+.btn-secondary {
    background-color: var(--light-color);
    border: none;
    color: var(--text-color);
-   font-family: var(--body-text-font);
-   font-size: 18px;
-   padding: 20px;
-   width: 300px;
-   cursor: pointer;
 }
-.btn:hover {
+.btn-secondary:hover {
    background-color: var(--primary-color);
    color: var(--light-color);
 }
-.btn-outline {
+.btn-outline-light {
    color: var(--light-color);
    border: #fff 1px solid;
    background-color: transparent;
-   font-family: var(--body-text-font);
-   font-size: 18px;
-   padding: 20px;
-   width: 300px;
    margin-top: 25px;
 }
-.btn-outline:hover {
+.btn-outline-light:hover {
    background-color: var(--light-color);
    color: var(--text-color);
 }
@@ -265,6 +273,9 @@ h4 {
    flex-basis: calc(50% - 250px);
    flex-grow: 1;
 }
+.info .btn {
+   margin-top: 30px;
+}
 .skill-list {
    list-style: none;
    margin: 0;
@@ -409,10 +420,10 @@ footer {
       padding: 30px;
    }
    .btn,
-   .btn-outline {
+   .btn-secondary,
+   .btn-outline-light {
       font-size: 16px;
-      padding: 18px;
-      width: 240px;
+      padding: 18px 68px;
    }
    .skill-list {
       font-size: 36px;
@@ -492,6 +503,9 @@ footer {
    }
    .about {
       gap: 20px;
+   }
+   .info .btn {
+      margin-top: 20px;
    }
    .cta {
       flex-basis: 540px;
@@ -584,19 +598,14 @@ footer {
    .about {
       gap: 10px;
    }
+   .info .btn {
+      margin-top: 15px;
+   }
    .single-project {
       padding: 20px;
    }
    .cta {
       flex-basis: 400px;
-   }
-   .btn {
-      margin-top: 10px;
-   }
-   .btn,
-   .btn-outline {
-      padding: 16px;
-      width: 200px;
    }
    .skill-list {
       font-size: 26px;
@@ -617,11 +626,15 @@ footer {
       height: 320px;
    }
    .btn,
-   .btn-outline {
-      width: 170px;
+   .btn-secondary,
+   .btn-outline-light {
+      padding: 16px 28px;
+   }
+   .info .btn {
+      margin-top: 10px;
    }
    .skill-list {
-      font-size: 24px;
+      font-size: 18px;
    }
    .skill-list li {
       margin: 10px 0;
