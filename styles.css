@@ -50,7 +50,7 @@ h1 {
 }
 h2 {
    font-size: 140px;
-   line-height: 1;
+   line-height: 1.2;
 }
 h3 {
    font-size: 80px;
@@ -101,6 +101,7 @@ h4 {
    color: var(--text-color);
 }
 
+.coming-soon,
 .intro,
 .projects,
 .about {
@@ -113,6 +114,24 @@ h4 {
 .single-project p,
 .about {
    user-select: none;
+}
+
+/* coming soon */
+.coming-soon {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   width: 100%;
+   height: 100vh;
+   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("./images/coming-soon.webp") center/cover no-repeat;
+   color: #fff;
+}
+.coming-soon p {
+   font-size: 22px;
+   margin-bottom: 50px;
 }
 
 /* navigation */
@@ -350,6 +369,7 @@ footer {
 }
 
 @media all and (max-width: 2048px) {
+   .coming-soon,
    .intro,
    .projects,
    .about {
@@ -361,6 +381,7 @@ footer {
 }
 
 @media all and (max-width: 1920px) {
+   .coming-soon,
    .intro,
    .projects,
    .about {
@@ -382,6 +403,7 @@ footer {
    body {
       font-size: 18px;
    }
+   .coming-soon,
    .intro,
    .projects,
    .about {
@@ -481,6 +503,7 @@ footer {
 }
 
 @media all and (max-width: 912px) {
+   .coming-soon,
    .intro,
    .projects,
    .about {
@@ -570,6 +593,7 @@ footer {
    .intro {
       margin-top: 24%;
    }
+   .coming-soon,
    .intro,
    .projects,
    .about {
